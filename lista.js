@@ -22,7 +22,7 @@ const db = getDatabase(app);
 
 
 
-let tabla = document.querySelector(".tabla-estudiantes");
+let tabla = document.querySelector(".tabla-huerta");
 
 
 
@@ -44,8 +44,14 @@ onValue(refhuerta, (datos) => {
 if (huerta.temperatura > 30) {
     alert("🔥 ¡La temperatura está muy alta! Más de 30°C.");
   }
+    if (huerta.humedadSuelo > 70) {
+        alert("💧 La humedad del suelo es MUY ALTA. ¡Las plantas corren riesgo de pudrir raíces!");
+    } 
+    else if (huerta.humedadSuelo < 30) {
+        alert("🌵 La humedad del suelo es MUY BAJA. ¡A las plantas les falta agua!");
+    } 
+    else {
+        alert("✅ La humedad del suelo está en un rango saludable.");
     }
-
-
-)
+});
 

@@ -8,7 +8,6 @@ body {
     align-items: center;
 }
 
-/* ------- Título ------- */
 h1 {
     color: #333;
     text-align: center;
@@ -24,4 +23,23 @@ h1 {
     width: 90%;
     max-width: 600px;
     overflow-x: auto;
+}
+
+.titulo {
+    width: 100%;               
+    background-color: rgb(55, 181, 55);
+    padding: 20px 0;            
+    text-align: center;   
+    padding: 20px 0;
+    margin-bottom: 250px;     
+}
+
+.tabla-huerta {
+    margin-top: 30px;
+}
+
+.humedad-temperatura {
+    padding: 20px 30px;        
+    text-align: center;        
+    border-right: 2px solid #ccc; 
 }
